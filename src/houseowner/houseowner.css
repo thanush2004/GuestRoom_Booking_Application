@@ -1,0 +1,242 @@
+/* General Layout */
+.house-owner * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.house-owner body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.house-owner a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.house-owner header {
+  background-color: white;
+  padding: 20px 0;
+}
+
+.house-owner h1, .house-owner h2, .house-owner h3, .house-owner p {
+  margin-bottom: 10px;
+}
+
+/* Navbar Styling */
+.house-owner__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.house-owner__logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #5C6BC0;
+}
+
+.house-owner__nav-links {
+  list-style: none;
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  gap: 20px;
+}
+
+.house-owner__nav-links li a {
+  color:#5C6BC0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.house-owner__nav-links li a:hover {
+  background-color: #7986CB;
+  color: white;
+}
+
+/* Hero Section Styling */
+.house-owner__hero {
+  background-image: url('https://example.com/your-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.house-owner__hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(92, 107, 192, 0.75); /* Overlay for readability */
+  z-index: 1;
+}
+
+.house-owner__hero-content {
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+
+.house-owner__hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.house-owner__hero-content p {
+  font-size: 1.2rem;
+}
+
+/* Room Manager Form Styling */
+.house-owner__room-manager {
+  background-color: #fff;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.house-owner__room-manager h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.house-owner__room-manager-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.house-owner__room-manager-form input[type="text"],
+.house-owner__room-manager-form input[type="file"],
+.house-owner__room-manager-form input[type="number"],
+.house-owner__room-manager-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.house-owner__room-manager-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.house-owner__btn-submit {
+  background-color: #5C6BC0;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.house-owner__btn-submit:hover {
+  background-color: #7986CB;
+}
+
+/* Room Cards Styling */
+.house-owner__display-rooms {
+  padding: 10px;
+  max-width: 1000px;
+  max-height: 200px;
+  margin: 20px auto;
+}
+
+.house-owner__room-card {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.house-owner__room-card img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.house-owner__room-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.house-owner__room-card p {
+  flex-grow: 1;
+  margin-left: 20px
+}
+
+.house-owner__btn-edit,
+.house-owner__btn-delete {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 40px;
+  transition: background 0.3s ease;
+}
+
+.house-owner__btn-edit {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.house-owner__btn-delete {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.house-owner__btn-edit:hover {
+  background-color: #66bb6a;
+}
+
+.house-owner__btn-delete:hover {
+  background-color: #e57373;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .house-owner__navbar {
+    flex-direction: column;
+  }
+
+  .house-owner__hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .house-owner__room-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .house-owner__room-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}

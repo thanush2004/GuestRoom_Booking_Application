@@ -1,0 +1,41 @@
+/* NavBar.module.css */
+
+.navBarContainer {
+    /* background-color: #343a40; */
+    background-color: black;
+    padding: 10px 20px;
+    width: 100%;
+  }
+  
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    margin: 20px;
+    padding: 0;
+  }
+  
+  .navItem {
+    margin: 0 15px;
+  }
+  
+  .navLink {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px;
+    font-weight: 700;
+  }
+  
+  .navLink:hover {
+    color: #ffc107;
+  }
+  .title{
+    display: flex;
+    padding-left: 54rem;
+  }
+  

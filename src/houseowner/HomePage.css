@@ -1,0 +1,328 @@
+/* Global Reset */
+.home-body {
+  margin-top: -9px;
+  margin-left: -10px;
+  margin-right: -8px;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header and Navbar */
+.home-header {
+  background-color: #222; /* Darkened for better contrast */
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.home-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.home-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.home-logo img {
+  height: 50px;
+  width: 50px;
+}
+
+.home-nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.home-nav-links li {
+  margin-left: 1.5rem;
+}
+
+.home-nav-links a {
+  color: #ffffff; /* High contrast white */
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.home-nav-links a:hover {
+  text-decoration: underline;
+}
+
+.home-main-content {
+  padding: 2rem 0;
+}
+
+.home-hero {
+  position: relative;
+  color: #000; /* Contrast with white background */
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+  text-align: center;
+  margin-top: -32px;
+  overflow: hidden;
+}
+
+.home-hero-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.home-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.home-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  color: #000; /* Black for better readability */
+}
+
+.home-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.9; /* Slight transparency for sleekness */
+}
+
+.home-hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.home-btn-primary {
+  background-color: #0056b3; /* Darkened blue for better contrast */
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.home-btn-primary:hover {
+  background-color: #003f8a; /* Even darker on hover */
+}
+
+.home-about {
+  padding: 4rem 2rem;
+  background-color: #f7f9fc;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.home-about h2 {
+  font-size: 2.5rem;
+  color: #0056b3; /* High contrast blue */
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.home-about p {
+  font-size: 1.25rem;
+  color: #444; /* Darkened for better readability */
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.home-about ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.home-about li {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.home-about button {
+  background-color: #222; /* Darkened for better contrast */
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-about button:hover {
+  background-color: #0056b3; /* Blue on hover for a better experience */
+}
+
+.home-rooms {
+  padding: 2rem;
+  background-color: #f3f3f3;
+}
+
+.home-rooms h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.home-room-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.home-room-card {
+  width: 30%;
+  max-width: 300px;
+  border: 1px solid #ccc; /* Slightly darker for better definition */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 1rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-room-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 0.5rem;
+}
+
+.home-room-card h3 {
+  margin: 1rem 0;
+}
+
+.home-room-card p {
+  margin: 0.5rem 0;
+}
+
+.home-room-card button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745; /* High contrast green */
+  color: #fff;
+  margin: 0.5rem;
+}
+
+.home-room-card button:hover {
+  background-color: #218838; /* Darker on hover */
+}
+
+.home-room-card button.delete {
+  background-color: #dc3545; /* High contrast delete button */
+}
+
+.home-room-card button.delete:hover {
+  background-color: #c82333;
+}
+
+.home-contact {
+  padding: 3rem 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.home-contact h2 {
+  font-size: 2.5rem;
+  color: #0056b3; /* High contrast blue */
+  margin-bottom: 1.5rem;
+}
+
+.home-contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+}
+
+.home-contact-form label {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #333; /* Darker text */
+}
+
+.home-contact-form input,
+.home-contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Darkened border */
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.home-contact-form input:focus,
+.home-contact-form textarea:focus {
+  border-color: #0056b3; /* High contrast focus color */
+  outline: none;
+}
+
+.home-contact-form button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #0056b3; /* Blue for consistency */
+  color: #fff;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home-contact-form button:hover {
+  background-color: #003f8a;
+}
+
+.form-feedback {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #28a745;
+  text-align: center;
+}
+
+.home-contact-form .home-btn-secondary {
+  background-color: #dc3545;
+}
+
+.home-contact-form .home-btn-secondary:hover {
+  background-color: #c82333;
+}
+
+/* Footer */
+.home-footer {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 2rem;
+  background-color: #222; /* Dark footer for contrast */
+  color: #fff;
+}

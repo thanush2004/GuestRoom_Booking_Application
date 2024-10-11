@@ -1,0 +1,54 @@
+/* src/customer/customer.module.css */
+
+.checkIn {
+    margin-right: 10px;
+    border: none;
+    background-color: rgb(151, 250, 4);
+    font-size: 20px;
+    border-radius: 7px;
+    text-align: center;
+    height: 45px;
+    width:200px;
+}
+
+.checkOut {
+    margin-left: 10px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(151, 250, 4);
+    border-radius: 7px;
+    height: 45px;
+    width:200px;
+}
+
+.check-in,
+.check-out {
+    padding: 0.8rem;
+    background-color: rgb(151, 250, 4);
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.check-in:hover, 
+.check-out:hover {
+    background-color: rgb(200, 255, 100);
+    cursor: pointer;
+}
+
+.availabilityButton {
+    background-color: #4CAF50; /* Darker green for button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Adjust font size for better readability */
+}
+
+.availabilityButton:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Additional styles can be added below for other elements as needed */
